@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الإعدادات - Breeze</title>
+
+    <style>
+        body {
+            font-family: "Tahoma", sans-serif;
+            background-color: #f8f5f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #ffffff;
+            padding: 15px;
+            box-shadow: 0 2px 5px #ddd;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #444;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 500px;
+            margin: 40px auto;
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px #ddd;
+        }
+
+        .setting-box {
+            background: #fafafa;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+        }
+
+        .setting-box strong {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #222;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div><strong>Breeze</strong></div>
+        <div>
+            <a href="login.html">تسجيل الدخول</a>
+            <a href="signup.html">إنشاء حساب</a>
+            <a href="home.html">الرئيسية</a>
+            <a href="devices.html">الأجهزة</a>
+            <a href="alerts.html">التنبيهات</a>
+            <a href="account.html">الحساب</a>
+            <a href="settings.html">الإعدادات</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2>الإعدادات</h2>
+
+        <div class="setting-box">
+            <strong>تغيير اللغة:</strong>
+            <select>
+                <option>العربية</option>
+                <option>English</option>
+            </select>
+        </div>
+
+        <div class="setting-box">
+            <strong>الإشعارات:</strong>
+            <label><input type="checkbox" checked> تفعيل الإشعارات</label>
+        </div>
+
+        <div class="setting-box">
+            <strong>الوضع الليلي:</strong>
+            <label><input type="checkbox"> تفعيل الوضع الليلي</label>
+        </div>
+
+        <button>حفظ الإعدادات</button>
+    </div>
+
+</body>
+</html>
